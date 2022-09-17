@@ -1,0 +1,32 @@
+{
+  "name": "netlify-plugin-21yunbox-deploy-to-china-cdn",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Accelerate Your Site in China Legitimately",
+  "main": "index.js",
+  "repository": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn.git",
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "build",
+    "plugins",
+    "21yunbox",
+    "21cloudbox",
+    "china",
+    "cdn"
+  ],
+  "author": {
+    "name": "21YunBox Team",
+    "email": "hello@21yunbox.com",
+    "url": "https://www.21cloudbox.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn/issues"
+  },
+  "homepage": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "form-data": "^4.0.0"
+  }
+}
