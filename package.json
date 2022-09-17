@@ -4,7 +4,10 @@
   "type": "module",
   "description": "Accelerate Your Site in China Legitimately",
   "main": "index.js",
-  "repository": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn.git"
+  },
   "keywords": [
     "netlify",
     "netlify-plugin",
@@ -15,11 +18,7 @@
     "china",
     "cdn"
   ],
-  "author": {
-    "name": "21YunBox Team",
-    "email": "hello@21yunbox.com",
-    "url": "https://www.21cloudbox.com"
-  },
+  "author": "21YunBox Team <hello@21yunbox.com> (https://www.21cloudbox.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tobyglei/netlify-plugin-21yunbox-deploy-to-china-cdn/issues"
@@ -28,5 +27,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "form-data": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
