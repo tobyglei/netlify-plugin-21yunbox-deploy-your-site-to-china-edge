@@ -10,13 +10,13 @@ For file-based installation, add the following lines to your **netlify.toml** fi
 
 ```toml
 [[plugins]]
-package = "netlify-plugin-21yunbox-deploy-your-site-to-china-edge"
+package = "@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn"
 ```
 
 To complete file-based installation from your project's base directory, use npm, yarn, or any other Node.js package manager to add the plugin to devDependencies in `package.json`.
 
 ```
-npm install -D netlify-plugin-21yunbox-deploy-your-site-to-china-edge
+npm install -D @21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn
 ```
 
 [1]: https://www.21cloudbox.com/
