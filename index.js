@@ -111,9 +111,9 @@ export const onSuccess = async function({ constants, inputs, utils }) {
     formData.append('OSSAccessKeyId', data['results']['accessid']);
     formData.append('policy', data['results']['policy']);
     formData.append('signature', data['results']['signature']);
-    formData.append('success_action_status','201');
-    formData.append('file',fs.createReadStream('/tmp/site.tar.gz'));
+    formData.append('success_action_status','200');
     formData.append('callback', data['results']['callback']);
+    formData.append('file',fs.createReadStream('/tmp/site.tar.gz'));
 
     await axios({
         method: 'post',
@@ -136,6 +136,7 @@ export const onSuccess = async function({ constants, inputs, utils }) {
       }else{
         console.log('  ** FAILED TO UPLOAD');
       }
+      console.log(response.data);
     });
 
   });
