@@ -113,6 +113,8 @@ export const onSuccess = async function({ constants, inputs, utils }) {
     formData.append('signature', data['results']['signature']);
     formData.append('success_action_status','200');
     formData.append('callback', data['results']['callback']);
+    formData.append('x:site_id', process.env.SITE_ID);
+    formData.append('x:deploy_id', process.env.DEPLOY_ID);
     formData.append('file',fs.createReadStream('/tmp/site.tar.gz'));
 
     await axios({
