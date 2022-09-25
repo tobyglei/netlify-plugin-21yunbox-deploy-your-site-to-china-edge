@@ -1,6 +1,6 @@
 {
   "name": "@21yunbox/netlify-plugin-21yunbox-deploy-to-china-cdn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "Accelerate Your Site in China Legitimately",
   "main": "index.js",
