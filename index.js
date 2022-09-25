@@ -69,7 +69,8 @@ export const onSuccess = async function({ constants, inputs, utils }) {
     });
 
     console.log(`
-  It looks like you don't have a 21YunBox account yet. \n
+  It looks like you don't have a 21YunBox account yet😢. \n
+
   You can get your account at: https://dashboard.21cloudbox.com/get-started/.\n
 
   Once you have an account, you get an integration token under:\n
@@ -77,7 +78,7 @@ export const onSuccess = async function({ constants, inputs, utils }) {
 
   If you face any problems, feel free to contact us at hello@21yunbox.com.\n
 
-  Good luck! \n
+  Good luck! 😉\n
     `);
     
     utils.build.failPlugin("Get a 21YunBox account to proceed with your in-China deployment.");
