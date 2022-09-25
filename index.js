@@ -65,20 +65,22 @@ export const onSuccess = async function({ constants, inputs, utils }) {
 
     utils.status.show({
       title: "Missing 21YunBox Netlify Integration Token",
-      summary: "Get a 21YunBox to proceed with your in-China deployment.",
+      summary: "Get a 21YunBox account to proceed with your in-China deployment.",
     });
 
     console.log(`
-  It looks like you don't have a 21YunBox account yet. You can get your account at: https://dashboard.21cloudbox.com/get-started/.\n
+  It looks like you don't have a 21YunBox account yet. \n
+  You can get your account at: https://dashboard.21cloudbox.com/get-started/.\n
 
-  Once you have an account, you can start your Netlify site integration in the 21YunBox dashboard by clicking "New" > "Integration" > "Netlify."\n
+  Once you have an account, you get an integration token under:\n
+  "New" > "Integration" > "Netlify."\n
 
   If you face any problems, feel free to contact us at hello@21yunbox.com.\n
 
   Good luck! \n
     `);
     
-    utils.build.failPlugin("Get a 21YunBox to proceed with your in-China deployment.");
+    utils.build.failPlugin("Get a 21YunBox account to proceed with your in-China deployment.");
   }
 
   // https://docs.netlify.com/integrations/build-plugins/create-plugins/#constants
