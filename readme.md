@@ -1,4 +1,4 @@
-# Fix Your Netlify Site in China
+# Deploy Your Netlify Site in China
 
 This Netlify Build Plugin is developed and powered by [21YunBox][1], and it helps you deploy your site to in-china Edge, and this plugin enables your site to load fast in mainland China.
 
