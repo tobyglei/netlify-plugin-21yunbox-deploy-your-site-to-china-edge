@@ -114,7 +114,7 @@ export const onSuccess = async function({ constants, inputs, utils }) {
 
   const sitefn = genfn(10);
 
-  const YB_UPLOAD_TOKEN_ENDPOINT = 'https://dashboard.21cloudbox.com/api/netlify-upload-token/';
+  const YB_UPLOAD_TOKEN_ENDPOINT = 'https://enterprise.21cloudbox.com/api/netlify-upload-token/';
   const YB_ACCESS_TOKEN = process.env.YB_NETLIFY_INTEGRATION_TOKEN;
   await axios.post(
     YB_UPLOAD_TOKEN_ENDPOINT, 
@@ -125,7 +125,7 @@ export const onSuccess = async function({ constants, inputs, utils }) {
     console.log(data);
 
     console.log('  ** UPLOADING...');
-    const UPLOAD_ENDPOINT = 'https://21yb-edge-processing.oss-cn-shanghai.aliyuncs.com';
+    const UPLOAD_ENDPOINT = 'https://yb-site-netlify.oss-cn-beijing.aliyuncs.com';
 
     const formData = new FormData();
     formData.append('key',`netlify/site-${sitefn}.tar.gz`);
